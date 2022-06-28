@@ -8,7 +8,7 @@ This instance is configured to be created in the `us-east-1` region.
 
 ## Before doing anything 
 
-[Modify](https://github.com/nicoacu/Terraforming-Apache2-in-AWS/blob/main/main.tf#L19) the `access_key` and `secret_key` with the ones from your AWS account.
+[Modify](https://github.com/nicoacu/Terraforming-Apache2-in-AWS/blob/main/main.tf#L19) the `access_key` and `secret_key` with the ones from your AWS account. Be aware to not publish these credentials in a public repository, instead use secrets to securely authenticate to your cloud provider (AWS Secrets Manager, Azure KeyVault, Hashicorp Vault, etc.).
 
 Make sure to replace the [key_name](https://github.com/nicoacu/Terraforming-Apache2-in-AWS/blob/main/main.tf#L156) parameter with the name of your key pair to be able to connect via ssh. 
 
